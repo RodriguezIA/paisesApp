@@ -4,6 +4,7 @@
             <th>#</th>
             <th>Bandera</th>
             <th>Nombre</th>
+            <th>Capital</th>
             <th>Poblacion</th>
             <th></th>
         </tr>
@@ -15,6 +16,7 @@
                 <img class="small-flag" [src]="p.flags.png" alt="Country flag">
             </td>
             <td>{{p.name.common}}</td>
+            <td>{{p.capital}}</td>
             <td>{{p.population | number}}</td>
             <td>
                 <a [routerLink]="['/pais', p.cca2]" href="#">Ver...</a>
