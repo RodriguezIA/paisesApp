@@ -1,11 +1,11 @@
 <div class="">
     <table class="table table-striped">
         <thead>
+
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Bandera</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Capital</th>
+                <th scope="col">Nombre del pais</th>
                 <th> </th>
             </tr>
         </thead>
@@ -16,7 +16,6 @@
                     <img class="small-flag" [src]="p.flags.png" alt="Country flag">
                 </td>
                 <td>{{p.name.common}}</td>
-                <td>{{p.capital}}</td>
                 <td>
                     <a [routerLink]="['/pais', p.cca2]" href="#">Ver...</a>
                 </td>
